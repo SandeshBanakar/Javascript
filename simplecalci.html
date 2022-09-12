@@ -15,6 +15,60 @@
     </head>
 
     <body>
-        
+        <div class="calci-box">
+            <div class="heading">
+                <h1>Simple Calculator</h1>
+            </div>
+
+            <div>
+                <input class="first-number" type="number" name="first" id="first" min="0" max="1000">
+
+                <select id="opr" class="dropdown">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">x</option>
+                    <option value="/">/</option>
+                </select>
+
+                <input class="second-number" type="number" name="second" id="second" min="0" max="1000">
+            </div>
+
+            <div>
+                <button class="calc-btn" onclick="calci()">
+                    <h3>
+                        Calculate
+                    </h3>
+                </button>
+
+                <input class="result-box" type="text" id="result" readonly>
+            </div>
+        </div>
     </body>
+
+    <script>
+        function calci() {
+            var opr1 = document.getElementById("first").value;
+            var opr2 = document.getElementById("second").value;
+
+            var opr = document.getElementById("opr").value;
+
+            if (opr == '+') {
+                var res = parseInt (opr1) + parseInt (opr2);
+            }
+
+            if (opr == '-') {
+                var res = parseInt (opr1) - parseInt (opr2);
+            }
+
+            if (opr == '*') {
+                var res = parseInt (opr1) * parseInt (opr2);
+            }
+
+            if (opr == '/') {
+                var res = parseInt (opr1) / parseInt (opr2);
+            }
+            
+            document.getElementById("result").value=res;
+        }
+    </script>
 </html>
