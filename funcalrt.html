@@ -1,0 +1,51 @@
+<!-- A program to display alert message when user clicks on a button on screen after entering name -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Function Display</title>
+
+        <!-- Important line to add if external CSS should work -->
+        <link rel="stylesheet" href="universalstyle.css" type="text/css">
+
+    </head>
+
+    <body>
+        <div class="outer">
+            <div>
+                <input class="namebar-one" type="name" name="onehesaru" id="onehesaru"
+                placeholder="Enter your First Name">
+            </div>
+
+            <div>
+                <input class="namebar-two" type="name" name="twohesaru" id="twohesaru"
+                placeholder="Enter your Last Name">
+            </div>
+
+            <div>
+                <button onclick="one()" class="click-btn">
+                    <a class="btn-text">Submit</a>
+                </button>
+            </div>
+        </div>
+    </body>
+
+    <script type="text/javascript">
+        function one() {
+            var one = document.getElementById("onehesaru").value;
+
+            confirm ("Hello '" + one + "'! Please confirm your First Name")
+
+            var two = document.getElementById("twohesaru").value;
+
+            confirm ("Please confirm your Last Name: '" + two + "'");
+
+            alert ("Name stored successfully!");
+
+        }
+    </script>
+</html>

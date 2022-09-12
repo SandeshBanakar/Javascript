@@ -1,0 +1,52 @@
+
+.onlyforthis {
+    margin: 100px;
+    text-align: center;
+}
+
+.outer {
+    border: 2px dotted black;
+    margin-top: 50px;
+    margin-left: 200px;
+    width: 780px;
+    height: 300px;
+}
+
+.namebar-one {
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 180px;
+    width: 400px;
+    height: 30px;
+}
+
+.namebar-two {
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 180px;
+    width: 400px;
+    height: 30px;
+}
+
+.namebar-one:focus .namebar-two:focus {
+    box-shadow: 0px 0px 9px skyblue;
+}
+
+.click-btn {
+    background-color: tomato;
+    border: none;
+    box-shadow: 0px 0px 6px gold;
+    border-radius: 20px;
+    margin-top: 210px;
+    margin-left: 280px;
+    width: 200px;
+    height: 30px;
+}
+
+.btn-text{
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Franklin Gothic , sans-serif;
+    color: white;
+    text-align: center;
+    margin-bottom: 50%;
+}
