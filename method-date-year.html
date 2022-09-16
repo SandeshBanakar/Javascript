@@ -24,6 +24,7 @@
     var date = new Date();
     var year = date.getFullYear();
     var month = date.getMonth();
+    var currdate = date.getDate();
 
     function DD() {
         document.getElementById("res").innerText=date;
@@ -35,6 +36,10 @@
 
     function MM() {
         document.getElementById("res").innerText=month;
+    }
+
+    function CurrentDate() {
+        document.getElementById("res").innerHTML=currdate;
     }
 </script>
 </html>
