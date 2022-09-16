@@ -11,21 +11,30 @@
 <body>
     <h1 id="res"></h1>
 
-    <button onclick="calls()">Date</button>
+    <button onclick="DD()">Date</button>
 
-    <button onclick="call()">Year</button>
+    <button onclick="YYYY()">Year</button>
+
+    <button onclick="MM()">Month</button>
+
+    <button onclick="CurrentDate()">Numerical Date</button>
 </body>
 
 <script>
     var date = new Date();
     var year = date.getFullYear();
+    var month = date.getMonth();
 
-    function calls() {
+    function DD() {
         document.getElementById("res").innerText=date;
     }
 
-    function call() {
+    function YYYY() {
         document.getElementById("res").innerText=year;
+    }
+
+    function MM() {
+        document.getElementById("res").innerText=month;
     }
 </script>
 </html>
